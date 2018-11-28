@@ -6,7 +6,7 @@ class SQLRunner
   end
 
   def execute_schema_sql
-    sql = File.read("lib/schema.sql")
+    sql = File.read('lib/schema.sql')
     @db.execute_batch(sql)
   end
 
